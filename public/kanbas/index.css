@@ -1,0 +1,166 @@
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 85px;
+  padding-left: 20px;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+/*
+====================================================================================================
+SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDE
+====================================================================================================
+*/
+
+.kb-sidebar {
+  height: 100%;
+  width: 85px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: black;
+}
+
+.kb-sidebar div {
+  font-size: 13px;
+  display: block;
+}
+
+.kb-sidebar a {
+  text-decoration: none;
+}
+
+.kb-sidebar i {
+  margin: 5px;
+}
+
+.kb-sidebar-text {
+  padding-bottom: 5px;
+}
+
+.kb-sidebar > .kb-sidebar-logo {
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.kb-sidebar .kb-sidebar-account {
+  color: gray;
+}
+
+.kb-sidebar .kb-sidebar-icon {
+  color: red;
+}
+
+.kb-sidebar > .kb-sidebar-unselected {
+  background-color: black;
+}
+
+.kb-sidebar > .kb-sidebar-unselected .kb-sidebar-text {
+  color: white;
+}
+
+.kb-sidebar > .kb-sidebar-selected {
+  background-color: white;
+}
+
+.kb-sidebar > .kb-sidebar-selected .kb-sidebar-text {
+  color: red;
+}
+
+/*
+====================================================================================================
+HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HE
+====================================================================================================
+*/
+
+.kb-header {
+  margin: 20px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.kb-header-icon {
+  color: red;
+  vertical-align: middle;
+  width: 0px;
+}
+
+.kb-header-text {
+  margin-left: 30px;
+  vertical-align: middle;
+  font-size: 1.25em;
+}
+
+.kb-header-line {
+  margin-right: 20px;
+}
+
+.breadcrumb > .breadcrumb-item {
+  color: red;
+}
+
+.breadcrumb > .active {
+  color: black;
+}
+
+/*
+====================================================================================================
+SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU S
+====================================================================================================
+*/
+
+.kb-sub-menu {
+  width: 195px;
+}
+
+.kb-sub-menu-title {
+  font-style: italic;
+  font-size: 10px;
+  color: gray;
+}
+
+.kb-sub-menu a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.kb-sub-menu > div {
+    padding: 8px;
+    padding-left: 5px;
+}
+
+.kb-sub-menu-selected {
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+
+.kb-sub-menu-selected a {
+  color: black;
+}
+
+.kb-sub-menu-unselected a {
+    color: red;
+}
+
+/*
+====================================================================================================
+BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT
+====================================================================================================
+*/
+
+.kb-body-text {
+  font-size: 15px;
+  padding: 8px;
+  margin-right: 20px;
+}
+
+.kb-body-text-link {
+    text-decoration: none;
+    color: red;
+}

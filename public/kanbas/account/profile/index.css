@@ -1,0 +1,12 @@
+.kb-body-text-picture {
+    padding: 5px;
+}
+
+.kb-body-text-edit-links-ref {
+    font-weight: bold;
+    text-align: center;
+}
+
+.kb-body-text-edit-links-delete {
+    color: red;
+}
