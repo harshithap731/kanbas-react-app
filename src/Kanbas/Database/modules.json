@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Week 0 - Introduction to Rocket",
+        "description": "Introduction to Rockets",
+        "course": "RS101",
+        "_id": 1
+    },
+    {
+        "name": "Week 1 - Fuel/Combustion",
+        "description": "Introduction to Fuels",
+        "course": "RS101",
+        "_id": 2
+    },
+    {
+        "name": "Week 2 - Nozzle Design",
+        "description": "Introduction to Nozzles",
+        "course": "RS101",
+        "_id": 3
+    },
+    {
+        "name": "Week 0 - Aerodynamics Basics",
+        "description": "Introduction to Aerodynamics",
+        "course": "RS102",
+        "_id": 4
+    },
+    {
+        "name": "Week 1 - Subsonic Supersonic Flow",
+        "description": "Introduction to Flows",
+        "course": "RS102",
+        "_id": 5
+    },
+    {
+        "name": "Week 2 - Aerodynamic Heating",
+        "description": "Introduction to Heatings",
+        "course": "RS102",
+        "_id": 6
+    },
+    {
+        "name": "Week 0 - Spacecraft Design",
+        "description": "Introduction to Designs",
+        "course": "RS103",
+        "_id": 7
+    },
+    {
+        "name": "Week 1 - Orbital Mechanics",
+        "description": "Introduction to Orbitals",
+        "course": "RS103",
+        "_id": 8
+    },
+    {
+        "name": "Week 2 - Spacecraft Engineering",
+        "description": "Introduction to Spacecrafts",
+        "course": "RS103",
+        "_id": 9
+    }
+]
