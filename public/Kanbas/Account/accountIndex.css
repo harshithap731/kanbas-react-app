@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-nav {
+    width: 85px;
+    background-color: black;
+}
+
+.wd-nav-list-group {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-nav-list-group-item :link {
+    text-decoration: none;
+}
+
+.wd-nav-icon {
+    color: #b52828;
+}
+
+.wd-active {
+    background-color: #ffff;
+}
+
+.wd-active-title {
+    color: #b52828;
+}
+.wd-active-icon {
+    color: #b52828;
+    background-color: #ffff;
+}
+
+.wd-account-nav {
+    box-shadow: 6px 6px 17px -3px rgba(0, 0, 0, 0.74);
+        -webkit-box-shadow: 6px 0px 10px -3px rgba(0, 0, 0, 0.74);
+        -moz-box-shadow: 6px 6px 17px -3px rgba(0, 0, 0, 0.74);
+}
+.wd-account-nav-profile-icon {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #C7CDD1;
+}
+.wd-account-nav-profile-icon-text {
+    font-weight: 600;
+}
+.wd-account-nav-profile-text {
+    color: #2D3B45;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.wd-nav-list-group-item-text {
+    font-weight: 500;
+}

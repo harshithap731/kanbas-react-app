@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="edit.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </head>
+  <body style="overflow-y: hidden">
+    <div class="d-flex">
+      <div class="vh-100 wd-nav">
+        <ul class="wd-nav-list-group text-light">
+          <img
+            src="../../../images/neu_logo.png"
+            height="60px"
+            class="w-full"
+            style="margin-left: 6px"
+          />
+          <li class="wd-nav-list-group-item py-2">
+            <a href="../../Account/Profile/index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i
+                  class="wd-nav-icon fa-2xl fa-regular fa-circle-user my-3"
+                ></i>
+                <div>Account</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="../../Dashboard/index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-gauge my-3"></i>
+                <div>Dashboard</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1 wd-active">
+            <a href="../Home/index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i
+                  class="wd-active-icon wd-nav-icon fa-xl fa-solid fa-book my-3"
+                ></i>
+                <div class="wd-active-title">Courses</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-calendar-days my-3"></i>
+                <div>Calendar</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-inbox my-3"></i>
+                <div>Inbox</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-regular fa-clock my-3"></i>
+                <div>History</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-film my-3"></i>
+                <div>Studio</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i
+                  class="wd-nav-icon fa-xl fa-solid fa-circle-question my-3"
+                ></i>
+                <div>Help</div>
+              </div></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column w-100 my-3">
+        <div class="mx-4 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-bars fa-xl" style="color: #b52828"></i>
+            <div
+              class="wd-account-profile-text"
+              style="
+                color: #b52828;
+                margin-left: 30px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 20%;
+              "
+            >
+              CS5610.11550.202410
+            </div>
+            <i
+              class="fa-solid fa-chevron-right mx-3"
+              style="color: #2d3b45"
+            ></i>
+            <div class="wd-account-profile-text" style="color: #b52828">
+              Assignments
+            </div>
+            <i
+              class="fa-solid fa-chevron-right mx-3"
+              style="color: #2d3b45"
+            ></i>
+            <div
+              style="
+                color: #2d3b45;
+                font-size: 18px;
+                font-weight: 500;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 20%;
+              "
+            >
+              A1 ENV + HTML
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary btn-sm">
+            <span><i class="fa-solid fa-glasses"></i></span>
+            Student View
+          </button>
+        </div>
+        <hr class="mx-4" />
+        <div class="d-flex">
+          <div class="wd-account-nav bg-white pb-4">
+            <ul
+              class="wd-nav-list-group"
+              style="max-height: 82vh; overflow-y: auto"
+            >
+              <div
+                class="mx-4 mb-3"
+                style="
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  font-size: 12px;
+                  color: #2d3b45;
+                  font-weight: 500;
+                  font-style: italic;
+                "
+              >
+                202330_2 Spring 2023 Semester Full Term Grad
+              </div>
+              <li class="wd-nav-list-group-item mb-3 px-4">
+                <a
+                  href="../Home/index.html"
+                  class="text-danger wd-nav-list-group-item-text"
+                  >Home</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item mb-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Modules</a
+                >
+              </li>
+
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Piazza</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Zoom Meetings</a
+                >
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-2"
+                style="margin-left: 14px; border-left: 2px solid #2d3b45"
+              >
+                <a
+                  href="index.html"
+                  class="wd-nav-list-group-item-active wd-nav-list-group-item-text"
+                  >Assignments</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Quizzes</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a
+                  href="../Grades/index.html"
+                  class="text-danger wd-nav-list-group-item-text"
+                  >Grades</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >People</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Panopto Video</a
+                >
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Discussions</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Announcements</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Pages</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Files</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Rubrics</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Outcomes</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Collaborations</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-4 d-flex align-items-center justify-content-between"
+              >
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Syllabus</a
+                >
+                <i class="fa-regular fa-eye-slash"></i>
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Progress Reports (EAB Navigate)</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a
+                  href="../Settings/index.html"
+                  class="text-danger wd-nav-list-group-item-text"
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row w-100 me-4" style="margin-left: 30px">
+            <div class="col">
+              <div class="d-flex justify-content-end align-items-center">
+                <i class="fa-solid fa-circle-check" style="color: #1f990c"></i>
+                <div style="color: #1f990c; font-weight: 500" class="mx-2">
+                  Published
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="action-menu"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="action-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Speed Grader</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <div style="overflow-y: auto; height: 75vh">
+                <form>
+                  <div class="form-group">
+                    <label for="assignmentName">Assignment Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="assignmentName"
+                      aria-describedby="assignmentName"
+                      placeholder="Edit assignment name"
+                      value="A1 - ENV + HTML"
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea
+                      class="form-control"
+                      id="assignmentDescription"
+                      rows="3"
+                    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea
+                    >
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <div
+                      class="form-group d-flex align-items-center justify-content-center w-50 mt-3"
+                    >
+                      <label for="assignmentPoints" class="w-50">Points</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="assignmentPoints"
+                        aria-describedby="assignmentPoints"
+                        placeholder="points"
+                        value="88"
+                      />
+                    </div>
+                    <div class="form-group d-flex align-items-center w-50 mt-3">
+                      <label for="assignment-group" class="w-50"
+                        >Assignment Group</label
+                      >
+                      <select class="form-select" aria-label="assignment-group">
+                        <option selected>ASIGNMENTS</option>
+                        <option value="1">EXAMS</option>
+                      </select>
+                    </div>
+                    <div class="form-group d-flex align-items-center w-50 mt-3">
+                      <label for="assignment-group" class="w-50"
+                        >Display Grade as</label
+                      >
+                      <select class="form-select" aria-label="assignment-group">
+                        <option selected>Percentage</option>
+                        <option value="1">CGPA</option>
+                      </select>
+                    </div>
+                    <div class="form-group d-flex align-items-center w-50 mt-3">
+                      <label for="assignment-group" class="w-25"></label>
+                      <input
+                        type="checkbox"
+                        class="form-check-input ms-5"
+                        id=""
+                      />
+                      <label
+                        class="form-check-label ms-2"
+                        style="font-size: 13px"
+                        for="exampleCheck1"
+                        >Do not count this assignment towards the final
+                        grade</label
+                      >
+                    </div>
+                    <div class="form-group d-flex align-items-start w-50 mt-3">
+                      <label for="Submission-type" class="w-50"
+                        >Submission Type</label
+                      >
+                      <div
+                        class="p-3 w-100"
+                        style="border: 1px solid #ced4da; border-radius: 4px"
+                      >
+                        <select
+                          class="form-select w-75"
+                          aria-label="Submission-type"
+                        >
+                          <option selected>Online</option>
+                          <option value="1">In person</option>
+                        </select>
+                        <label class="my-2" style="font-weight: 500"
+                          >Online Entry Options</label
+                        >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="online-options"
+                            checked
+                          />
+                          <label class="form-check-label" for="onlineOption1">
+                            Text entry
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="online-options"
+                            checked
+                          />
+                          <label class="form-check-label" for="onlineOption2">
+                            Website URL
+                          </label>
+                        </div>
+                        <div class="form-check mt-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="online-options"
+                            checked
+                          />
+                          <label class="form-check-label" for="onlineOption3">
+                            Media Recordings
+                          </label>
+                        </div>
+
+                        <div class="form-check mt-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="online-options"
+                          />
+                          <label class="form-check-label" for="onlineOption4">
+                            Student Annotation
+                          </label>
+                        </div>
+
+                        <div class="form-check mt-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="online-options"
+                          />
+                          <label class="form-check-label" for="onlineOption5">
+                            File Uploads
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group d-flex align-items-start w-50 mt-3">
+                      <label for="Submission-type" class="w-50">Assign</label>
+                      <div
+                        style="border: 1px solid #ced4da; border-radius: 4px"
+                      >
+                        <div class="p-3 w-100">
+                          <div class="form-group">
+                            <label for="assignTo" style="font-weight: 500"
+                              >Assign To</label
+                            >
+                            <select class="form-control" id="assignTo">
+                              <option>Everyone</option>
+                              <option>Students</option>
+                            </select>
+                          </div>
+                          <div class="form-group mt-2">
+                            <label
+                              for="assignmentDueDate"
+                              style="font-weight: 500"
+                              >Due</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="assignmentDueDate"
+                            />
+                          </div>
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <div class="form-group mt-2">
+                              <label
+                                for="assignmentAvailable"
+                                style="font-weight: 500"
+                                >Available from</label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="assignmentAvailable"
+                              />
+                            </div>
+                            <div class="form-group mt-2 ms-2">
+                              <label
+                                for="assignmentAvailableUntil"
+                                style="font-weight: 500"
+                                >Util</label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="assignmentAvailableUntil"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary d-flex align-items-center w-100 justify-content-center mt-2"
+                          style="
+                            background-color: #ced4da;
+                            border: none;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                          "
+                        >
+                          <i class="fa-solid fa-plus"></i>
+                          <span style="margin-left: 5px">Add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mt-5 mb-2" />
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-group d-flex align-items-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contentNotification"
+                      />
+                      <label
+                        class="form-check-label ms-2"
+                        for="contentNotification"
+                        >Do not count this assignment towards the final
+                        grade</label
+                      >
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-sm"
+                      >
+                        <a
+                          href="index.html"
+                          style="text-decoration: none; color: inherit"
+                          >Cancel</a
+                        >
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm d-flex align-items-center text-light mx-2"
+                        style="background-color: #b52828"
+                      >
+                        <a
+                          href="index.html"
+                          style="text-decoration: none; color: inherit"
+                          >Save</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <hr class="mt-3 mb-2" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <table width="100%">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li><a href="../../Account/index.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="../index.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Comments</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><a href="../Home/index.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="../Assignments/index.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="../Grades/index.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panapto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="../Settings/index.html">Settings</a></li>
+            </ul>
+          </td>
+
+          <td valign="top">
+            <select>
+              <option>Speed Gader</option>
+            </select>
+
+            <h3>Assignment Name</h3>
+            <form>
+              <input type="text" placeholder="A1 - ENV + HTML" />
+              <br />
+              <br />
+              <textarea>This is the assignment description.</textarea>
+              <br />
+              <br />
+              <label>Points</label>
+              <br />
+              <input type="text" value="100" />
+              <br />
+              <br />
+              <label>Points</label>
+              <br />
+              <select>
+                <option>ASSIGNMENTS</option>
+              </select>
+              <br />
+              <br />
+              <label>Displayy grades as</label>
+              <br />
+              <select>
+                <option>Percentage</option>
+              </select>
+              <br />
+              <br />
+              <label>Submission type</label>
+              <br />
+              <select>
+                <option>Online</option>
+              </select>
+              <br />
+              <br />
+              <input
+                type="checkbox"
+                value="Entry"
+                name="text-entry"
+                id="text-entry"
+              />
+              <label for="text-entry">Text Entry</label>
+              <br />
+              <input
+                type="checkbox"
+                value="web-url"
+                name="website-url"
+                id="website-url"
+              />
+              <label for="website-url">Website URL</label>
+              <br />
+              <input
+                type="checkbox"
+                value="recordings"
+                name="media-recordings"
+                id="media-recordings"
+              />
+              <label for="media-recordings">Media recordings</label>
+              <br />
+              <input
+                type="checkbox"
+                value="annotations"
+                name="student-annotation"
+                id="student-annotation"
+              />
+              <label for="student-annotation">Student Annotation</label>
+              <br />
+              <input
+                type="checkbox"
+                value="uploads"
+                name="file-uploads"
+                id="file-uploads"
+              />
+              <label for="file-uploads">File Uploads</label>
+              <br />
+              <br />
+              <label>Submission Attempts</label>
+              <br />
+              <select>
+                <option>Unlimited</option>
+              </select>
+              <br />
+              <br />
+              <label>Plagarism Review</label>
+              <br />
+              <select>
+                <option>None</option>
+              </select>
+              <br />
+              <br />
+              <input
+                type="checkbox"
+                value="group-assignment"
+                name="group-assignment"
+                id="group-assignment"
+              />
+              <label for="group-assignment">Group Assignment</label>
+              <br />
+              <br />
+              <input
+                type="checkbox"
+                value="peer-reviews"
+                name="peer-reviews"
+                id="peer-reviews"
+              />
+              <label for="peer-reviews">Require Peer Reviews</label>
+              <br />
+              <br />
+              <label>Assign</label>
+              <br />
+              <label>Assign to</label>
+              <br />
+              <input type="text" placeholder="Everyone" value="Everyone" />
+              <br />
+              <br />
+              <label>Due</label>
+              <br />
+              <input type="date" />
+              <br />
+              <br />
+              <label>Available from</label>
+              <br />
+              <input type="date" />
+              <br />
+              <br />
+              <label>Until</label>
+              <br />
+              <input type="date" />
+              <br />
+              <br />
+              <button><a href="./index.html">Cancel</a></button>
+              <button><a href="./index.html">Save</a></button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html> -->

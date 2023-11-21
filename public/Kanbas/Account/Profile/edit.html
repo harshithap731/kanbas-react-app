@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="profile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="overflow-y: hidden">
+    <div class="d-flex">
+      <div class="vh-100 wd-nav">
+        <ul class="wd-nav-list-group text-light">
+          <img
+            src="../../../images/neu_logo.png"
+            height="60px"
+            class="w-full"
+            style="margin-left: 6px"
+          />
+          <li class="wd-nav-list-group-item py-2 wd-active">
+            <a href="./index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i
+                  class="wd-active-icon wd-nav-icon fa-2xl fa-regular fa-circle-user my-3"
+                ></i>
+                <div class="wd-active-title">Account</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="../../Dashboard/index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-gauge my-3"></i>
+                <div>Dashboard</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="../../Courses/Home/index.html" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-book my-3"></i>
+                <div>Courses</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-calendar-days my-3"></i>
+                <div>Calendar</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-inbox my-3"></i>
+                <div>Inbox</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-regular fa-clock my-3"></i>
+                <div>History</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="wd-nav-icon fa-xl fa-solid fa-film my-3"></i>
+                <div>Studio</div>
+              </div></a
+            >
+          </li>
+          <li class="wd-nav-list-group-item py-1">
+            <a href="#" class="text-light"
+              ><div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <i
+                  class="wd-nav-icon fa-xl fa-solid fa-circle-question my-3"
+                ></i>
+                <div>Help</div>
+              </div></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column w-100 my-3">
+        <div class="mx-4 d-flex align-items-center">
+          <i class="fa-solid fa-bars fa-xl" style="color: #b52828"></i>
+          <div class="wd-account-profile-text">Ayman Ahmad's Profile</div>
+        </div>
+        <hr class="mx-4" />
+        <div class="d-flex" style="height: 87vh; overflow-y: auto">
+          <div class="wd-account-nav bg-white pb-4">
+            <ul class="wd-nav-list-group">
+              <li class="wd-nav-list-group-item mb-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Notifications</a
+                >
+              </li>
+              <li
+                class="wd-nav-list-group-item my-3 px-2"
+                style="margin-left: 14px; border-left: 2px solid #2d3b45"
+              >
+                <a
+                  href="index.html"
+                  class="wd-nav-list-group-item-active wd-nav-list-group-item-text"
+                  >Profile</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Files</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Settings</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >ePortfolios</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Shared Content</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >The Hub</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Qwickly Course Tools</a
+                >
+              </li>
+              <li class="wd-nav-list-group-item my-3 px-4">
+                <a href="#" class="text-danger wd-nav-list-group-item-text"
+                  >Global Announcements</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="d-flex align-items-start justify-content-between w-100"
+            style="margin-left: 100px"
+          >
+            <div class="d-flex mt-4">
+              <i
+                class="wd-active-icon wd-nav-icon fa-regular fa-circle-user"
+                style="font-size: 150px"
+              ></i>
+              <div style="margin-left: 40px; width: 80vh">
+                <form class="w-100">
+                  <div class="form-group">
+                    <label for="profile-name" class="wd-edit-profile-label"
+                      >Name:*</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="profile-name"
+                      placeholder="Enter your name"
+                      value="Ayman Ahmad"
+                    />
+                  </div>
+                  <div class="form-group w-50">
+                    <label for="profile-pronoun" class="wd-edit-profile-label"
+                      >Pronouns:</label
+                    >
+                    <select class="form-control" id="profile-pronoun">
+                      <option>None</option>
+                      <option>He/Him</option>
+                      <option>She/Her</option>
+                      <option>They/Them</option>
+                      <option>He/They</option>
+                      <option>She/They</option>
+                      <option>He/She/They</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="profile-title" class="wd-edit-profile-label"
+                      >Title</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="profile-title"
+                      placeholder="Enter title"
+                    />
+                  </div>
+                  <div style="font-size: 24px; font-weight: 400" class="mt-4">
+                    Contact
+                  </div>
+                  <div class="mt-2">
+                    No registered services, you can add some on the
+                    <a href="#" style="color: #b52828">settings</a> page.
+                  </div>
+                  <div class="form-group">
+                    <label
+                      for="profile-textarea"
+                      style="font-size: 24px; font-weight: 400"
+                      class="mt-4"
+                      >Biography</label
+                    >
+                    <textarea
+                      class="form-control mt-2"
+                      id="profile-textarea"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      for="profile-textarea"
+                      style="font-size: 24px; font-weight: 400"
+                      class="mt-4"
+                      >Links</label
+                    >
+                    <div class="row mt-2">
+                      <div class="col-5 text-center" style="font-weight: 500">
+                        Title
+                      </div>
+                      <div class="col-3"></div>
+                      <div class="col-4" style="font-weight: 500">URL</div>
+                    </div>
+                    <div class="row mt-1 d-flex align-items-center">
+                      <div class="form-group col-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="profile-link1"
+                        />
+                      </div>
+                      <i class="fa-solid fa-arrow-right-long col-1"></i>
+                      <div class="form-group col-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="profile-link1"
+                        />
+                      </div>
+                      <i
+                        class="fa-solid fa-xmark col-1"
+                        style="color: #b52828"
+                      ></i>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-secondary btn-sm mt-1">
+                    Add another link
+                  </button>
+                  <hr />
+                  <div class="d-flex flex-row-reverse">
+                    <button type="button" class="btn btn-danger">
+                      <a
+                        href="./index.html"
+                        style="text-decoration: none; color: inherit"
+                        >Save Profile</a
+                      >
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      style="margin-right: 5px; text-decoration: none"
+                    >
+                      <a
+                        href="./index.html"
+                        style="text-decoration: none; color: inherit"
+                        >Cancel</a
+                      >
+                    </button>
+                  </div>
+                </form>
+                <!-- <div style="font-size: 29px; font-weight: 400">Ayman Ahmad</div>
+                <div style="font-size: 24px; font-weight: 400" class="mt-5">
+                  Contact
+                </div>
+                <div class="mt-2">
+                  No registered services, you can add some on the
+                  <span style="color: #b52828">settings</span> page.
+                </div>
+                <div style="font-size: 24px; font-weight: 400" class="mt-4">
+                  Biography
+                </div>
+                <div class="mt-2">Ayman Ahmad hasn't added a bio.</div>
+                <div style="font-size: 24px; font-weight: 400" class="mt-4">
+                  Links
+                </div>
+                <div class="mt-2">Ayman Ahmad hasn't added any links.</div> -->
+              </div>
+            </div>
+            <div class="mt-4">
+              <a href="./index.html" style="text-decoration: none">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary d-flex align-items-center justify-content-center"
+                  style="margin-right: 24px"
+                >
+                  <i class="fa-solid fa-pencil"></i>
+                  <div style="margin-left: 5px">Cancel Editing</div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <body>
+    <table width="100%">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li><a href="../../Account/index.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="../../Courses/index.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Comments</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="./index.html">Profile</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">ePortfolios</a></li>
+              <li><a href="#">Shared Content</a></li>
+              <li><a href="#">The Hub</a></li>
+              <li><a href="#">Qwickly Course Tools</a></li>
+              <li><a href="#">Global Announcements</a></li>
+            </ul>
+          </td>
+
+          <td valign="top">
+            <h1>Ayman Ahmad</h1>
+            <form>
+              <label>Name:*</label>
+              <input type="text" value="Ayman Ahmad" />
+              <label>Pronouns:</label>
+              <select>
+                <option>None</option>
+                <option>He/Him</option>
+                <option>Her/She</option>
+              </select>
+              <br />
+              <br />
+              <label>Title:</label>
+              <input type="text" placeholder="Enter title" />
+              <br />
+              <h3>Contact</h3>
+              <p>
+                No registered services, you can add some on the
+                <a href="#">settings</a> page.
+              </p>
+              <h3>Contact</h3>
+              <p>
+                No registered services, you can add some on the
+                <a href="#">settings</a> page.
+              </p>
+              <h3>Biography</h3>
+              <p>
+                Master Student, Software Engineer, Frontend Developer, Tech
+                enthusiast.
+              </p>
+              <textarea style="width: 25vw; height: 10vh">
+
+                Master Student, Software Engineer, Frontend Developer, Tech enthusiast.</textarea
+              >
+              <br />
+              <h3>Links</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/Ayman0206" target="_blank"
+                    >Github
+                    <i
+                      class="fa fa-external-link"
+                      style="
+                        font-size: 13px;
+                        margin-left: 2px;
+                        margin-right: 4px;
+                      "
+                    ></i
+                    ><span>Links to an external site.</span></a
+                  >
+                </li>
+              </ul>
+
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <div style="font-weight: 600">Title</div>
+                  <input type="text" value="Github" />
+                </div>
+                <i
+                  class="fa fa-arrow-right"
+                  style="font-size: 15px; margin-left: 5px; margin-right: 5px"
+                ></i>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <div style="font-weight: 600">URL</div>
+                  <input type="text" value="https://github.com/Ayman0206" />
+                </div>
+                <a href="#" style="margin-top: 20px; margin-left: 5px"
+                  >Remove</a
+                >
+              </div>
+              <button>Add another link</button>
+              <br />
+              <button>cancel</button>
+              <button><a href="./index.html">Save Profile</a></button>
+              <br />
+              <button>Edit Profile</button>
+              <button><a href="./index.html">Cancel Editing</a></button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body> -->
+</html>

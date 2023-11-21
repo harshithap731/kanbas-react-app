@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-nav {
+    width: 85px;
+    background-color: black;
+}
+
+.wd-nav-list-group {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-nav-list-group-item :link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+.wd-nav-icon {
+    color: #a32424;
+}
+
+.wd-active {
+    background-color: #ffff;
+}
+
+.wd-active-title {
+    color: #b52828;
+}
+
+.wd-active-icon {
+    color: #aba89f;
+    background-color: #ffff;
+}
+
+.wd-account-nav {
+    width: 190px;
+}
+
+.wd-nav-list-group-item-active {
+    color: #2D3B45;
+}
+
+.wd-nav-list-group-item-text {
+    font-weight: 500;
+    text-align: left;
+}
+
+.wd-account-profile-text {
+    /* margin-left: 30px; */
+    font-size: 18px;
+    font-weight: 500;
+    color: #2D3B45;
+}
+
+.wd-edit-profile-label {
+    font-weight: 600;
+    margin-top: 4px;
+}

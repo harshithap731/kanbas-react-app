@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wd-nav {
+    width: 85px;
+    background-color: black;
+}
+.wd-nav-list-group {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.wd-nav-list-group-item :link{
+    text-decoration: none;
+}
+.wd-nav-icon {
+color: #a32424;
+}
